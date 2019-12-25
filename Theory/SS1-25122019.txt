@@ -1,0 +1,48 @@
+*** C Programing Language:
+- Ngôn ngữ hướng cấu trúc
+- Tài liệu phức tạp
+- Bảo trì phức tạp
+- Nâng cấp phức tạp
+===
+SS1-25122019
+---
+*** Application Development Fundamentals I
+
+- Objective: mục tiêu
+- OOP - Object-oriented Programing: Lập trình hướng đối tượng
+	. Phát triển phần mềm tin cậy
+	. Giảm thiểu chi phí xây dựng
+	. Giảm thiểu chi phí bảo trì
+	. 
+
+- Object Oriented Development = Object Oriented Analysis + Object Oriented Design + Object Oriented Programing
+
+- An OOP language is based on certain principles that are as follows:
+	. Object (đối tượng) - Represents an entity which possesses certain features and behaviors.
+	(Đại diện cho 1 thực thể sở hữu các tính năng và hành vi nhất định)
+	
+	. Class (lớp) - Is a template that is used to create objects of that class.
+	(là 1 mẫu được sử dụng để tạo các đối tượng của lớp đó)
+	
+	. Abstraction (tính trừu tượng) - Is a design technique that focuses only on the essential features of an entity for a specific problem domain.
+	(là 1 kỹ thuật thiết kế chỉ tập trung vào các tính năng thiết yếu của một thực thể cho 1 miền vấn đề cụ thể)
+	
+	. Encapsulation (đóng gói) - Is a mechanism that combines data and implementation details into a single unit called class.
+	(là 1 cơ chế kết hợp dữ liệu và chi tiết triển khai thành 1 đơn vị gọi là lớp)
+	
+	. Inheritance (tính kế thừa) - Enables the developer to extend and reuse the features of existing classes and create new classes. The new classes are referred to as derived classes.
+	(cho phép nhà phát triển mở rộng và tái sử dụng các tính năng của các lớp hiện có và tạo các lớp mới. Các lớp mới gọi là các lớp dẫn xuất)
+	
+	. Polymorphism (tính đa hình) - Is the ability of an object to respond to same message in different ways.
+	(là khả năng của 1 đối tượng để trả lời cùng 1 thông điệp theo những cách khác nhau)
+	
+- Each object has:
+	. Characteristics - Defined as attributes, properties, or features describing the object.
+	. Actions - Defined as activities or operations performed by the object.
+	
+- The concept of objects in the real-world can be extended to the programming world where software 'objects' can be defined.
+
+- 1 Class có thể tạo được nhiều Object.
+
+- Java - viết 1 lần chạy được ở nhiều nơi (nhiều nền tảng).
+
