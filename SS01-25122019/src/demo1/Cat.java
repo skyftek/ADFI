@@ -10,9 +10,12 @@ package demo1;
  * @author Admin
  */
 public class Cat {
+
     String name;
+
+    private int age;
     
-    public void eat(){
+    public void eat() {
         System.out.println("A Cat is eating.");
     }
 }

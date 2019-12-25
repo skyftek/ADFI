@@ -9,7 +9,7 @@ SS1-25122019
 *** Application Development Fundamentals I
 
 - Objective: mục tiêu
-- OOP - Object-oriented Programing: Lập trình hướng đối tượng
+* OOP - Object-oriented Programing: Lập trình hướng đối tượng
 	. Phát triển phần mềm tin cậy
 	. Giảm thiểu chi phí xây dựng
 	. Giảm thiểu chi phí bảo trì
@@ -46,3 +46,23 @@ SS1-25122019
 
 - Java - viết 1 lần chạy được ở nhiều nơi (nhiều nền tảng).
 
+- package - chứa các file
+
+- import - khai báo thư viện
+
+* Variable (biến)
+- Biến bao gồm biến cục bộ (local variable) và biến toàn cục (global variable).
+	. local variable: nằm trong 1 khối hoặc trong 1 hàm
+		+ Biến là 1 thùng chứa, chứa bộ nhớ của java.
+		+ Nằm trong bộ nhớ Heap và Stack.
+		+ Muốn sử dụng biến phải khai báo.
+		+ Có 2 kiểu biến: kiểu dữ liệu nguyên thủy và kiểu dữ liệu đối tượng.
+	. global variable: nằm trong 1 file hay toàn file
+	
+- Quy tắc đặt tên biến (tìm hiểu các quy ước về đặt tên).
+
+- Primitive Data Type:
+	. Integer: byte (8 bit), short (16 bit), int (32 bit), long (64 bit)
+	. Float: float, double
+	. Character: char
+	. Boolean: boolean
