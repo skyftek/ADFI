@@ -81,13 +81,15 @@ public class TypesOfVariables {
         //  in ra man hinh gia tri so vua nhap vao
         System.out.println("So da nhap vao: " + input);
         
+        //  bat gia tri khi su dung Enter
         scanner.nextLine();
+        //  in ra gia tri trong de cach 1 dong
         System.out.println("");
         
         System.out.print("Nhap vao ky tu hoac chuoi: ");
         //  bat gia tri la ky tu hoac chuoi nhap vao
         String inputString = scanner.nextLine();
-        
+        //  in ra man hinh ky tu hoac chuoi nhap vao
         System.out.println("Chuoi da nhap vao: " + inputString);
     }
 }
