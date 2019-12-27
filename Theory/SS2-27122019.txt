@@ -2,3 +2,12 @@
 SS1-25122019
 ---
 *** Application Development Fundamentals I
+
+- final - biến hằng
+
+Khai báo:
+--- Code ---
+public class HinhTron {
+	static final PI = 3.14;
+}
+--- Code ---
