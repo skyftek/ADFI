@@ -7,7 +7,7 @@ package demo1;
 
 /**
  *
- * @author Admin
+ * @author skyftek
  */
 public class Cat {
 
