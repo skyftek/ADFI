@@ -7,7 +7,7 @@ package demo2;
 
 /**
  *
- * @author Admin
+ * @author skyftek
  */
 public class Conditional2 {
 

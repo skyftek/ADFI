@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author Admin
+ * @author skyftek
  */
 public class Conditional {
 
@@ -41,12 +41,5 @@ public class Conditional {
             System.out.println("Thuong = " + bonus);
         }
         System.out.println("OK. Nguoi tiep theo.");
-
-        // hoac
-        // Kiem tra sale >= target * 2 hay khong. Neu dung thi bonus = target * 2.
-        // Neu sai thi tiep tuc kiem tra sale >= target hay khong. Neu dung thi bonus = target.
-        // Neu sai thi bonus = 0.
-        bonus = (sale >= target * 2) ? target * 2 : ((sale >= target) ? target : 0);
-        System.out.println(bonus);
     }
 }
