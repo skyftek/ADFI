@@ -19,7 +19,7 @@ public class Main {
 //        calculator.setNum2(5);
         Scanner sc = new Scanner(System.in);
 
-        int num1, num2, choose;
+        int choose;
         do {
             System.out.println("***Calculator***");
             System.out.println("1. Tinh tong 2 so");
