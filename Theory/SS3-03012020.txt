@@ -1,0 +1,8 @@
+===
+SS4-03012020
+---
+*** Application Development Fundamentals I
+
+- Mảng: Tập hợp các dữ liệu có cùng kiểu dữ liệu
+	. Mảng cố định: Cấp phát tĩnh
+	. Cấp phát động
