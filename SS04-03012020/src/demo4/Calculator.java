@@ -5,6 +5,8 @@
  */
 package demo4;
 
+import java.util.Scanner;
+
 /**
  *
  * @author skyftek
@@ -40,6 +42,14 @@ public class Calculator {
 
     public void setNum2(int num2) {
         this.num2 = num2;
+    }
+
+    public void enter() {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("- Nhap vao so thu nhat: ");
+        this.num1 = sc.nextInt();
+        System.out.print("- Nhap vao so thu hai: ");
+        this.num2 = sc.nextInt();
     }
 
     public int add() {

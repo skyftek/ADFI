@@ -32,42 +32,22 @@ public class Main {
             choose = sc.nextInt();
             switch (choose) {
                 case 1:
-                    System.out.print("- Nhap vao so thu nhat: ");
-                    num1 = sc.nextInt();
-                    calculator.setNum1(num1);
-                    System.out.print("- Nhap vao so thu hai: ");
-                    num2 = sc.nextInt();
-                    calculator.setNum2(num2);
+                    calculator.enter();
                     System.out.printf("- Tong cua 2 so la: %d + %d = %d \n", calculator.getNum1(), calculator.getNum2(), calculator.add());
                     System.out.println("----- ----- ----- -----\n\n");
                     break;
                 case 2:
-                    System.out.print("- Nhap vao so thu nhat: ");
-                    num1 = sc.nextInt();
-                    calculator.setNum1(num1);
-                    System.out.print("- Nhap vao so thu hai: ");
-                    num2 = sc.nextInt();
-                    calculator.setNum2(num2);
+                    calculator.enter();
                     System.out.printf("- Hieu cua 2 so la: %d - %d = %d \n", calculator.getNum1(), calculator.getNum2(), calculator.sub());
                     System.out.println("----- ----- ----- -----\n\n");
                     break;
                 case 3:
-                    System.out.print("- Nhap vao so thu nhat: ");
-                    num1 = sc.nextInt();
-                    calculator.setNum1(num1);
-                    System.out.print("- Nhap vao so thu hai: ");
-                    num2 = sc.nextInt();
-                    calculator.setNum2(num2);
+                    calculator.enter();
                     System.out.printf("- Tich cua 2 so la: %d * %d = %d \n", calculator.getNum1(), calculator.getNum2(), calculator.mul());
                     System.out.println("----- ----- ----- -----\n\n");
                     break;
                 case 4:
-                    System.out.print("- Nhap vao so thu nhat: ");
-                    num1 = sc.nextInt();
-                    calculator.setNum1(num1);
-                    System.out.print("- Nhap vao so thu hai: ");
-                    num2 = sc.nextInt();
-                    calculator.setNum2(num2);
+                    calculator.enter();
                     System.out.printf("- Thuong cua 2 so la: %d / %d = %d \n", calculator.getNum1(), calculator.getNum2(), calculator.div());
                     System.out.println("----- ----- ----- -----\n\n");
                     break;
