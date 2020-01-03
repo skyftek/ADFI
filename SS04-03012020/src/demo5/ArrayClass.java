@@ -5,7 +5,8 @@
  */
 package demo5;
 
-import java.util.Arrays;
+import demo4.Calculator;
+import java.util.ArrayList;
 
 /**
  *
@@ -36,6 +37,29 @@ public class ArrayClass {
         // tinh tong su dung ham sum
         ArrayClass ar = new ArrayClass();
         ar.sum(numbers);
+
+        // khai bao mang arraylist cho cap phat dong
+        ArrayList al = new ArrayList();
+        al.add("Van anh lu'");
+        al.add(2);
+        al.add(true);
+        System.out.println("Do dai cua ArrayList = " + al.size());
+        // ket qua: Do dai cua ArrayList = 3
+
+        // duyet phan tu co trong ArrayList
+        for (int i = 0; i < al.size(); i++) {
+            System.out.println(al.get(i));
+        }
+
+        // them phan tu tu doi tuong Calculator
+        Calculator cal = new Calculator();
+        al.add(cal);
+
+        Object obj = al.get(0);
+
+        // khai bao mang dong kieu Calculator
+        ArrayList<Calculator> alcal = new ArrayList<>();
+
     }
 
     // ham tinh tong cac phan tu trong mang
