@@ -19,6 +19,8 @@ public class Main {
 //        calculator.setNum2(5);
         Scanner sc = new Scanner(System.in);
 
+        System.out.println(calculator.add(1, 2, 3, 4, 5, 6, 7, 8));
+
         int choose;
         do {
             System.out.println("***Calculator***");

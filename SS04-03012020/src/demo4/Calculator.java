@@ -72,4 +72,12 @@ public class Calculator {
             return this.num1 / this.num2;
         }
     }
+
+    public float add(float... a) {
+        float res = 0;
+        for (int i = 0; i < a.length; i++) {
+            res += a[i];
+        }
+        return res;
+    }
 }
