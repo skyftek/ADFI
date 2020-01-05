@@ -44,16 +44,13 @@ public class Main {
                     m.add();
                     break;
                 case 3:
-                    System.out.println("Comming soon..");
-                    System.out.println("Chuc nang dang duoc xay dung. Vui long quay lai sau!");
+                    m.update();
                     break;
                 case 4:
-                    System.out.println("Comming soon..");
-                    System.out.println("Chuc nang dang duoc xay dung. Vui long quay lai sau!");
+                    m.remove();
                     break;
                 case 5:
-                    System.out.println("Comming soon..");
-                    System.out.println("Chuc nang dang duoc xay dung. Vui long quay lai sau!");
+                    m.search();
                     break;
                 case 6:
                     m.view1993();
@@ -107,6 +104,154 @@ public class Main {
         id++;
         student = new Student(id, stu_name, stu_age, stu_address, stu_dob, stu_gender, stu_phoneNumber, stu_facebook);
         arr.add(student);
+    }
+
+    public void update() {
+        if (arr.isEmpty()) {
+            System.out.println("Chua co du lieu.");
+        } else {
+            Scanner s = new Scanner(System.in);
+            System.out.println("- Nhap vao ma sinh vien: ");
+            int stu_id = s.nextInt();
+            for (int i = 0; i < arr.size(); i++) {
+                student = arr.get(i);
+                if (student.stu_id == stu_id) {
+                    System.out.println("Tim thay thong tin sinh vien co MaSV la " + stu_id);
+                    student.showInfo();
+
+                    updateInfo(student, i);
+                } else {
+                    System.out.println("Khong tim thay thong tin sinh vien co MaSV la " + stu_id);
+                }
+            }
+        }
+    }
+
+    public void updateInfo(Student stu, int index) {
+        int choose;
+        Scanner s = new Scanner(System.in);
+        do {
+            System.out.println("\n");
+            System.out.println("-> Thay doi thong tin sinh vien");
+            System.out.println("1. Thay doi ten");
+            System.out.println("2. Thay doi tuoi");
+            System.out.println("3. Thay doi dia chi");
+            System.out.println("4. Thay doi nam sinh");
+            System.out.println("5. Thay doi gioi tinh");
+            System.out.println("6. Thay doi SDT");
+            System.out.println("7. Thay doi Facebook");
+            System.out.println("---");
+            System.out.println("8. Luu thong tin thay doi");
+            System.out.println("0. Huy");
+            System.out.println("--- --- ---");
+            System.out.print("Chon: ");
+            choose = s.nextInt();
+            switch (choose) {
+                case 1:
+                    s.nextLine();
+                    System.out.println("- Nhap vao ten moi: ");
+                    String new_name = s.nextLine();
+                    stu.setStu_name(new_name);
+                    break;
+                case 2:
+                    System.out.println("- Nhap vao tuoi moi: ");
+                    int new_age = s.nextInt();
+                    stu.setStu_age(new_age);
+                    break;
+                case 3:
+                    s.nextLine();
+                    System.out.println("- Nhap vao dia chi moi: ");
+                    String new_address = s.nextLine();
+                    stu.setStu_address(new_address);
+                    break;
+                case 4:
+                    System.out.println("- Nhap vao nam sinh moi: ");
+                    int new_dob = s.nextInt();
+                    stu.setStu_dob(new_dob);
+                    break;
+                case 5:
+                    s.nextLine();
+                    System.out.println("- Nhap vao gioi tinh moi: ");
+                    String value = s.nextLine();
+                    int new_gender;
+                    if (value.equals("Nam") || value.equals("nam")) {
+                        new_gender = 1;
+                    } else {
+                        new_gender = 0;
+                    }
+                    stu.setStu_gender(new_gender);
+                    break;
+                case 6:
+                    s.nextLine();
+                    System.out.println("- Nhap vao SDT moi: ");
+                    String new_phoneNumber = s.nextLine();
+                    stu.setStu_phoneNumber(new_phoneNumber);
+                    break;
+                case 7:
+                    s.nextLine();
+                    System.out.println("- Nhap vao link Facebook moi: ");
+                    String new_facebook = s.nextLine();
+                    stu.setStu_facebook(new_facebook);
+                    break;
+                case 8:
+                    arr.set(index, student);
+                    System.out.println("Cap nhat thong tin thanh cong.");
+                    break;
+                case 0:
+                    System.out.println("Da huy cap nhat thong tin.");
+                    break;
+                default:
+                    System.out.println("Vui long lua chon chinh xac thong tin muon thay doi!");
+
+            }
+        } while (choose != 0);
+    }
+
+    public void remove() {
+        if (arr.isEmpty()) {
+            System.out.println("Chua co du lieu.");
+        } else {
+            Scanner s = new Scanner(System.in);
+            System.out.println("- Nhap vao ma sinh vien: ");
+            int stu_id = s.nextInt();
+            for (int i = 0; i < arr.size(); i++) {
+                student = arr.get(i);
+                if (student.stu_id == stu_id) {
+                    System.out.println("Tim thay thong tin sinh vien co MaSV la " + stu_id);
+                    student.showInfo();
+                    System.out.print("Ban co dong y xoa thong tin sinh vien co MaSV la " + stu_id + " khong? (Y/N)");
+                    s.nextLine();
+                    String confirm = s.nextLine();
+                    if (confirm.equals("Y") || confirm.equals("y")) {
+                        arr.remove(i);
+                        System.out.println("Ban da xoa thong tin sinh vien tai vi tri MaSV = " + stu_id);
+                    } else {
+                        System.out.println("Ban da huy thao tac.");
+                    }
+                } else {
+                    System.out.println("Khong tim thay thong tin sinh vien co MaSV la " + stu_id);
+                }
+            }
+        }
+    }
+
+    public void search() {
+        if (arr.isEmpty()) {
+            System.out.println("Chua co du lieu.");
+        } else {
+            Scanner s = new Scanner(System.in);
+            System.out.println("- Nhap vao ten sinh vien muon tim kiem: ");
+            String stu_name = s.nextLine();
+            for (int i = 0; i < arr.size(); i++) {
+                student = arr.get(i);
+                System.out.println("- Tim thay ket qua: ");
+                if (student.stu_name.equals(stu_name)) {
+                    student.showInfo();
+                } else {
+                    System.out.println("Khong tim thay thong tin sinh vien co ten la " + stu_name);
+                }
+            }
+        }
     }
 
     public void view1993() {
