@@ -13,24 +13,23 @@ import java.util.Scanner;
  */
 public class Exercise2 {
 
-    /*
-        Nhập vào tháng, năm bất kỳ.
-        In ra số ngày tương ứng với tháng, năm đó.
-        Sử dụng kiểu ENUM, switch để xây dựng chương trình.
-     */
     enum Month {
-        JANUARY(1), FEBRUARY(2), MARCH(3), APRIL(4), MAY(5), JUNE(6), JULY(7), AUGUST(8), SEPTEMBER(9), OCTORBER(10), NOVEMBER(11), DECEMBER(12);
+        JAN(1, 31), FEB(2, 28), MAR(3, 31), APR(4, 30), MAY(5, 31), JUN(6, 30), JUL(7, 31), AUG(8, 31), SEP(9, 30), OCT(10, 31), NOV(11, 30), DEC(12, 31);
 
-        int value;
+        int month, day;
 
-        Month(int value) {
-            this.value = value;
+        private Month() {
+        }
+
+        private Month(int month, int day) {
+            this.month = month;
+            this.day = day;
         }
 
         public static Month getMonthByValue(int value) {
-            for (Month m : Month.values()) {
-                if (m.value == value) {
-                    return m;
+            for (Month month : Month.values()) {
+                if (month.month == value) {
+                    return month;
                 }
             }
             return null;
@@ -38,81 +37,68 @@ public class Exercise2 {
     }
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Nhap vao ten thang: ");
-        String month = scanner.nextLine();
-        System.out.print("Nhap vao nam bat ky: ");
-        int year = scanner.nextInt();
+        Scanner s = new Scanner(System.in);
+        Exercise2 e = new Exercise2();
+        System.out.print("- Nhap vao thang bat ky bang so: ");
+        int month = s.nextInt();
+        System.out.print("- Nhap vao nam bat ky: ");
+        int year = s.nextInt();
         switch (month) {
-            case "1":
-            case "january":
-            case "JANUARY":
-                System.out.println(Month.JANUARY + ", " + year + ": 31 ngay");
+            case 1:
+                e.view(month, year);
                 break;
-            case "2":
-            case "february":
-            case "FEBRUARY":
-                int day = 28;
-                if (year % 4 == 0 && year % 100 != 0) {
-                    day = 29;
-                } else if (year % 100 == 0 && year % 400 == 0) {
-                    day = 29;
-                }
-                System.out.println(Month.FEBRUARY + ", " + year + ": " + day + " ngay");
+            case 2:
+                e.view(month, year);
                 break;
-            case "3":
-            case "march":
-            case "MARCH":
-                System.out.println(Month.MARCH + ", " + year + ": 31 ngay");
+            case 3:
+                e.view(month, year);
                 break;
-            case "4":
-            case "april":
-            case "APRIL":
-                System.out.println(Month.APRIL + ", " + year + ": 30 ngay");
+            case 4:
+                e.view(month, year);
                 break;
-            case "5":
-            case "may":
-            case "MAY":
-                System.out.println(Month.MAY + ", " + year + ": 31 ngay");
+            case 5:
+                e.view(month, year);
                 break;
-            case "6":
-            case "june":
-            case "JUNE":
-                System.out.println(Month.JUNE + ", " + year + ": 30 ngay");
+            case 6:
+                e.view(month, year);
                 break;
-            case "7":
-            case "july":
-            case "JULY":
-                System.out.println(Month.JULY + ", " + year + ": 31 ngay");
+            case 7:
+                e.view(month, year);
                 break;
-            case "8":
-            case "august":
-            case "AUGUST":
-                System.out.println(Month.AUGUST + ", " + year + ": 31 ngay");
+            case 8:
+                e.view(month, year);
                 break;
-            case "9":
-            case "september":
-            case "SEPTEMBER":
-                System.out.println(Month.SEPTEMBER + ", " + year + ": 30 ngay");
+            case 9:
+                e.view(month, year);
                 break;
-            case "10":
-            case "october":
-            case "OCTOBER":
-                System.out.println(Month.OCTORBER + ", " + year + ": 31 ngay");
+            case 10:
+                e.view(month, year);
                 break;
-            case "11":
-            case "november":
-            case "NOVEMBER":
-                System.out.println(Month.NOVEMBER + ", " + year + ": 30 ngay");
+            case 11:
+                e.view(month, year);
                 break;
-            case "12":
-            case "december":
-            case "DECEMBER":
-                System.out.println(Month.DECEMBER + ", " + year + ": 31 ngay");
+            case 12:
+                e.view(month, year);
                 break;
             default:
-                System.out.println("Ban nhap khong chinh xac!");
+                System.out.println("So lieu khong chinh xac.");
                 System.out.println("Ket thuc chuong trinh.");
         }
+    }
+
+    public void view(int month, int year) {
+        if (month == 2) {
+            int day = 28;
+            if (year % 4 == 0 && year % 100 != 0) {
+                day = 29;
+            } else if (year % 100 == 0 && year % 400 == 0) {
+                day = 29;
+            }
+            System.out.println("Thang " + month + " co " + day + " ngay.");
+        } else {
+            Month m = Month.getMonthByValue(month);
+            System.out.println("Thang " + m.month + " co " + m.day + " ngay.");
+        }
+        System.out.println("Ket thuc chuong trinh.");
     }
 }
