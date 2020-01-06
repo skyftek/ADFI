@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package SS04.Exercise5;
+package SS04.Exercise5n6;
 
 /**
  *

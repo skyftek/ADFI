@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package SS04.Exercise5;
+package SS04.Exercise5n6;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -27,6 +27,7 @@ public class Main {
             System.out.println("***Chuong trinh quan ly diem sinh vien***");
             System.out.println("1. Xem danh sach sinh vien");
             System.out.println("2. Them moi thong tin sinh vien");
+            System.out.println("3. Xoa sinh vien");
             System.out.println("0. Thoat");
             System.out.println("----- ----- -----");
             System.out.print("Chon: ");
@@ -37,6 +38,9 @@ public class Main {
                     break;
                 case 2:
                     m.add();
+                    break;
+                case 3:
+                    m.remove(m);
                     break;
                 case 0:
                     System.out.println("Ket thuc chuong trinh.");
@@ -73,5 +77,40 @@ public class Main {
         id++;
         student = new Student(id, stu_name, stu_age, stu_mark1, stu_mark2, stu_mark3);
         arr.add(student);
+    }
+
+    public void remove(Main m) {
+        int count = 0;
+        if (arr.isEmpty()) {
+            System.out.println("Chua co du lieu.");
+        } else {
+            Scanner s = new Scanner(System.in);
+            System.out.println("- Nhap vao MaSV muon xoa: ");
+            int stu_id = s.nextInt();
+            for (int i = 0; i < arr.size(); i++) {
+                student = arr.get(i);
+                if (student.stu_id == stu_id) {
+                    count++;
+                    System.out.println("Tim thay thong tin sinh vien co MaSV la " + stu_id);
+                    student.showInfo();
+                    System.out.print("Ban co dong y xoa thong tin sinh vien co MaSV la " + stu_id + " khong? (Y/N)");
+                    s.nextLine();
+                    String confirm = s.nextLine();
+                    if (confirm.equals("Y") || confirm.equals("y")) {
+                        arr.remove(i);
+                        System.out.println("Ban da xoa thong tin sinh vien tai vi tri MaSV = " + stu_id);
+                        System.out.println("---");
+                        System.out.println("Danh sach sinh vien sau khi duoc cap nhat: ");
+                        m.view();
+                        count--;
+                    } else {
+                        System.out.println("Ban da huy thao tac.");
+                    }
+                }
+                if (count > 0) {
+                    System.out.println("Khong tim thay thong tin sinh vien co MaSV la " + stu_id);
+                }
+            }
+        }
     }
 }
