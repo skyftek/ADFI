@@ -54,3 +54,15 @@ Bài 5: Viết một chương trình thực hiện các công việc như sau
     - Bước 1. Tạo một class SinhVien, với các thuộc tính của class như sau: Họ tên, Mã nhân viên, Tuổi, Điểm Toán, Điểm Lý, Điểm Hoá, Điểm Trung Bình 
     - Bước 2. Khởi tạo một mảng các sinh viên(dùng mảng thông thường) và nhập dữ liệu đầy đủ các thông tin cho 3 sinh viên trừ thuộc tính Điểm Trung Bình thì không nhập 
     - Bước 3. In ra danh sách các sinh viên và điểm từng môn vừa nhập 
+    - Bước 4. Tính điểm trung bình từng sinh viên và gán giá trị đó vào thuộc tính Điểm Trung Bình(công thức: (Toán + Lý + Hoá)/3) 
+    - Bước 5. In ra danh sách sinh viên sau khi tính được điểm trung bình Bước 6. Xoá một sinh viên dựa vào Mã nhân viên do người dùng nhập vào. Bước 7. In ra danh sách sinh viên sau khi đã xoá đi một sinh viên 
+
+Bài 6: Viết một chương trình thực hiện các công việc như sau 
+    - Bước 1. Tạo một class SinhVien, với các thuộc tính của class như sau: Họ tên, Mã nhân viên, Tuổi, Điểm Toán, Điểm Lý, Điểm Hoá, Điểm Trung Bình 
+    - Bước 2. Khởi tạo một mảng các sinh viên(dùng ArrayList) và nhập dữ liệu đầy đủ các thông tin cho 3 sinh viên trừ thuộc tính Điểm Trung Bình thì không nhập 
+    - Bước 3. In ra danh sách các sinh viên và điểm từng môn vừa nhập 
+    - Bước 4. Tính điểm trung bình từng sinh viên và gán giá trị đó vào thuộc tính Điểm Trung Bình(công thức: (Toán + Lý + Hoá)/3) 
+    - Bước 5. In ra danh sách sinh viên sau khi tính được điểm trung bình 
+    - Bước 6. Xoá một sinh viên dựa vào Mã nhân viên do người dùng nhập vào. 
+    - Bước 7. In ra danh sách sinh viên sau khi đã xoá đi một sinh viên
+
