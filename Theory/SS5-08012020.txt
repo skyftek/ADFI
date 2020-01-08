@@ -1,0 +1,22 @@
+===
+SS5-08012020
+---
+4 Tính chất đặc trưng của lập trình hướng đối tượng - Java
+- Tính đóng gói
+- Tính kế thừa
+- Tính đa hình
+- Tính trừu tượng
+---
+*** Application Development Fundamentals I
+
+INHERITANCE AND POLYMORPHISM
+
+- Final - Biến
+		- Method
+		- Class
+		
+- Static - Biến
+		 - Method
+		 - Class
+
+* Tính kế thừa:
