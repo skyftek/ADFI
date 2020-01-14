@@ -1,0 +1,1 @@
+Student{student_id=0, student_name='Nguyen Viet Anh', student_dob=Tue Jul 26 00:00:00 ICT 1994, student_mark=10.0, student_ranked='A'}
