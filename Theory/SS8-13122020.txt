@@ -1,0 +1,15 @@
+===
+SS08-13012020
+---
+TRY
+CATCH
+FINALLY
+THROW
+THROWS
+---
+- Try - Catch
+- Try - Finally
+- Try - Catch - Finally
+
+- Throws - Khai báo trên hàm: ném ngoại lệ cho 1 hàm khác xử lý
+- Throw - Khai báo trong hàm: 

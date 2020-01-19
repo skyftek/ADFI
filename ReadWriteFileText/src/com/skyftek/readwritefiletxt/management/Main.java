@@ -43,7 +43,7 @@ public class Main {
                 case 4:
                     System.out.println("\n---\n4. Read from Student.txt");
                     Function f_read = new Function();
-                    f_read.readExistFile();
+                    f_read.readExistFile(stu_list);
                     break;
                 case 0:
                     System.out.println("\n---\n0. Exit");

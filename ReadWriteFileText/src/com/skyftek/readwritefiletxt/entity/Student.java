@@ -77,10 +77,10 @@ public class Student {
 
         return "Student{" +
                 "student_id=" + student_id +
-                ", student_name='" + student_name + '\'' +
+                ", student_name=" + student_name +
                 ", student_dob=" + student_dob +
                 ", student_mark=" + student_mark +
-                ", student_ranked='" + student_ranked + '\'' +
+                ", student_ranked=" + student_ranked +
                 '}';
     }
 

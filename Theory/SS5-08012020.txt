@@ -20,3 +20,9 @@ INHERITANCE AND POLYMORPHISM
 		 - Class
 
 * Tính kế thừa:
+
+- Instanceof
+
+* Interface:
+- Class: Khuôn
+- Interface: Hợp đồng
